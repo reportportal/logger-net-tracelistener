@@ -1,0 +1,3 @@
+[submodule "super-duper-client"]
+	path = super-duper-client
+	url = https://github.com/nvborisenko/super-duper-client.git
