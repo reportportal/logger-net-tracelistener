@@ -17,7 +17,7 @@ Add custom listener in your *App.config* file.
   <system.diagnostics>
     <trace>
       <listeners>
-        <add name="ReportPortalListener" type="ReportPortal.ReportPortalTracer, ReportPortal.Tracer" />
+        <add name="ReportPortalListener" type="ReportPortal.Tracer.ReportPortalTracer, ReportPortal.Tracer" />
       </listeners>
     </trace>
   </system.diagnostics>
