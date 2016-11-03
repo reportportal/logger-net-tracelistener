@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ReportPortal.Tracer</id>
+    <version>$version$</version>
+    <title>ReportPortal Tracer</title>
+    <authors>Nikolay Borisenko</authors>
+    <owners>Nikolay Borisenko</owners>
+    <licenseUrl>https://raw.githubusercontent.com/reportportal/logger-net-tracelistener/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/reportportal/logger-net-tracelistener</projectUrl>
+    <iconUrl>https://reportportal.github.io/img/rp_logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Report Portal System.Diagnostics.Trace integration point</description>
+    <copyright>Copyright 2016</copyright>
+    <tags>reportportal testing</tags>
+
+    <dependencies>
+      <group>
+        <dependency id="ReportPortal.Shared" version="[1.1.1,)" />
+      </group>
+    </dependencies>
+
+  </metadata>
+  <files>
+     <file src="ReportPortal.Tracer.dll" target="lib" />
+
+  </files>
+
+</package>
