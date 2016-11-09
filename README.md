@@ -6,8 +6,9 @@ Install **ReportPortal.Tracer** NuGet package.
 
 [![NuGet version](https://badge.fury.io/nu/reportportal.tracer.svg)](https://badge.fury.io/nu/reportportal.tracer)
 
-
-> PS> Install-Package ReportPortal.Tracer
+```powershell
+PS> Install-Package ReportPortal.Tracer
+```
 
 # Configuration
 Add custom listener in your *App.config* file.
