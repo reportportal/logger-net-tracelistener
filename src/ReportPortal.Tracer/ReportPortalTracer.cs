@@ -14,18 +14,7 @@ namespace ReportPortal.Tracer
     {
         public override void Write(string message)
         {
-            if (Bridge.Context.TestId != null)
-            {
-                var request = new AddLogItemRequest
-                {
-                    TestItemId = Bridge.Context.TestId,
-                    Level = LogLevel.Info,
-                    Time = DateTime.UtcNow,
-                    Text = message
-                };
-
-                Bridge.Service.AddLogItem(request);
-            }
+            Bridge.LogMessage(LogLevel.Info, message);
         }
 
         public override void WriteLine(string message)
