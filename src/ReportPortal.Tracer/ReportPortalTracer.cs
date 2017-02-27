@@ -14,7 +14,15 @@ namespace ReportPortal.Tracer
     {
         public override void Write(string message)
         {
-            Bridge.LogMessage(LogLevel.Info, message);
+            if (Bridge.Context.LaunchReporter != null && Bridge.Context.LaunchReporter.LastTestNode != null)
+            {
+                Bridge.Context.LaunchReporter.LastTestNode.Log(new AddLogItemRequest
+                {
+                    Level = LogLevel.Info,
+                    Time = DateTime.UtcNow,
+                    Text = message
+                });
+            }
         }
 
         public override void WriteLine(string message)
