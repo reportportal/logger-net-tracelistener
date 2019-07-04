@@ -14,7 +14,12 @@ namespace ReportPortal.Tracer
     {
         public override void Write(string message)
         {
-            Bridge.LogMessage(LogLevel.Info, message);
+            Log.Message(new AddLogItemRequest
+            {
+                Level = LogLevel.Info,
+                Time = DateTime.UtcNow,
+                Text = message
+            });
         }
 
         public override void WriteLine(string message)
