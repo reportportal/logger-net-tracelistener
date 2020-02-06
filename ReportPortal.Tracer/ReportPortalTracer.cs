@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
-using ReportPortal.Client.Models;
-using ReportPortal.Client.Requests;
+using ReportPortal.Client.Abstractions.Requests;
+using ReportPortal.Client.Abstractions.Responses;
 using ReportPortal.Shared;
 
 namespace ReportPortal.Tracer
@@ -14,7 +14,7 @@ namespace ReportPortal.Tracer
     {
         public override void Write(string message)
         {
-            Log.Message(new AddLogItemRequest
+            Log.Message(new CreateLogItemRequest
             {
                 Level = LogLevel.Info,
                 Time = DateTime.UtcNow,
