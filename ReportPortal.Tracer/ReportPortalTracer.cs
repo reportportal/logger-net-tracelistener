@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
+using ReportPortal.Client.Abstractions.Models;
 using ReportPortal.Client.Abstractions.Requests;
-using ReportPortal.Client.Abstractions.Responses;
 using ReportPortal.Shared;
 
 namespace ReportPortal.Tracer
