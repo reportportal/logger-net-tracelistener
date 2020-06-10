@@ -14,7 +14,7 @@ namespace ReportPortal.Tracer
     {
         public override void Write(string message)
         {
-            Log.Message(new CreateLogItemRequest
+            Log.ActiveScope.Message(new CreateLogItemRequest
             {
                 Level = LogLevel.Info,
                 Time = DateTime.UtcNow,
